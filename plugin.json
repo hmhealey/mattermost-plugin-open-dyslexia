@@ -1,22 +1,22 @@
 {
-    "id": "com.mattermost.plugin-starter-template",
-    "name": "Plugin Starter Template",
-    "description": "This plugin serves as a starting point for writing a Mattermost plugin.",
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-starter-template",
-    "support_url": "https://github.com/mattermost/mattermost-plugin-starter-template/issues",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/tag/v0.1.0",
+    "id": "ca.hmhealey.plugin-open-dyslexic",
+    "name": "OpenDyslexic Font Plugin",
+    "description": "This plugin modifies the Mattermost web app to use OpenDyslexic.",
+    "homepage_url": "https://github.com/hmhealey/mattermost-plugin-open-dyslexic",
+    "support_url": "https://github.com/hmhealey/mattermost-plugin-open-dyslexic/issues",
+    "release_notes_url": "https://github.com/hmhealey/mattermost-plugin-open-dyslexic/releases/tag/v0.1.0",
     "icon_path": "assets/starter-template-icon.svg",
     "version": "0.1.0",
     "min_server_version": "5.12.0",
+    "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+    },
     "server": {
         "executables": {
             "linux-amd64": "server/dist/plugin-linux-amd64",
             "darwin-amd64": "server/dist/plugin-darwin-amd64",
             "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         }
-    },
-    "webapp": {
-        "bundle_path": "webapp/dist/main.js"
     },
     "settings_schema": {
         "header": "",
